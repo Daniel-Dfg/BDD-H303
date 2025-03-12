@@ -1,0 +1,4 @@
+La base de données comporte une entité Utilisateur avec un identifiant unique, un pseudo et un mot de passe (l'adresse email n'est volontairement pas incluse pour simplifier la gestion).
+Pour simplifier la gestion, tous les personnages sont explicitement féminin. Par conséquent, aucun attribut lié au genre ne sera mentionné dans le diagramme ER. ^_^ hahahahaha
+??? : À chaque montée de niveau, le joueur reçoit un certain nombre de « points d'attributs » qu'il peut distribuer librement pour augmenter les attributs de son personnage.
+??? : La classe d'un personnage ne peut pas changer après la création du personnage.
