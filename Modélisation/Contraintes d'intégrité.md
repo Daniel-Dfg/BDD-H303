@@ -5,10 +5,11 @@
 
 # Utilisateurs 
 - Lorsqu'un joueur accumule suffisamment de points d'expérience pour atteindre la valeur maximale d'un niveau, il passe au niveau supérieur et ses points d'expérience sont remis à zéro.
+- Un joueur ne peut faire que 3 choses avec des objets : en accumuler, et s'il en a, les consommer ou les jeter.
 
 # Classe des personnages
 - Les éléments nommés `*_base` (Mana_base, HP_Base, ...) représentent les statistiques initiales des différentes classes de personnages.
-- Le niveau d'un personnage peut atteindre une valeur maximale de 99.
+- Le niveau d'un personnage peut atteindre une valeur maximale de 99. Il est initialement à 1.
 
  ### Attributs par classe :
 
@@ -28,7 +29,7 @@
 
 
 # Compétences des personnages
-- Une compétence ne peut pas être utilisée si le personnage ne l’a pas apprise
+- Une compétence ne peut pas être utilisée si le personnage ne l’a pas apprise.
 - Une compétence ne peut pas être améliorée au-delà de son niveau max.
 - Un personnage ne peux pas utiliser une compétence tant que son temps de recharge n'est pas à 0.
 - Le niveau de déblocage d'une compétence ne peut excéder le niveau maximal pour un personnage.
@@ -36,7 +37,6 @@
 
 # Inventaire des personnages
 - La quantité d’objets contenu dans l'inventaire du personnage ne peut dépasser la limite définie par son niveau et les éventuels artéfacts augmentant cette capacité.
-- La quantité d'un même objet dans l'inventaire à une valeur maximal de 99. [pourrait-on modéliser cela dans le diagramme ?]
 
 # Objets
 - !!! : A supprimé pour moi : Le prix d'un objet ne peut pas excéder la quantité maximale d'argent stockable par un Utilisateur en théorie, c'est-à-dire la quantité maximale d'argent stockable au niveau maximal et avec tous les artéfacts pouvant possiblement augmenter cette capacité.
