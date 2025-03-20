@@ -7,7 +7,9 @@
 - Lorsqu'un joueur accumule suffisamment de points d'expérience pour atteindre la valeur maximale d'un niveau, il passe au niveau supérieur et ses points d'expérience sont remis à zéro.
 - Un joueur ne peut faire que 3 choses avec des objets : en accumuler, et s'il en a, les consommer ou les jeter.
 
-# Classe des personnages
+# Personnages
+
+## Classe des personnages
 - Les éléments nommés `*_base` (Mana_base, HP_Base, ...) représentent les statistiques initiales des différentes classes de personnages.
 - Le niveau d'un personnage peut atteindre une valeur maximale de 99. Il est initialement à 1.
 
@@ -20,7 +22,7 @@
 - Force_Base des Guerriers > Force_Base des Voleurs >  Force_Base des Mages
 
 
-# Capacités des personnages
+## Capacités
 - ??? Compréhensible sur le schéma? : Lors de la création d'un personnage, ses attributs, statistiques et compétence initials sont ceux définis par sa classe.
 - Les quantités de Mana, Agilité et HP d'un personnage (`*_Évolutif`) sont déterminées en fonction de son niveau.
 - Le coût en Mana des Compétences d'un personnage ne peut excéder le Mana actuel du personnage (`Mana_Évolutif`).
@@ -28,15 +30,18 @@
 - Les attributs et statistiques d'un personnage peut atteindre une valeur maximale de 999.
 
 
-# Compétences des personnages
+## Compétences
 - Une compétence ne peut pas être utilisée si le personnage ne l’a pas apprise.
 - Une compétence ne peut pas être améliorée au-delà de son niveau max.
 - Un personnage ne peux pas utiliser une compétence tant que son temps de recharge n'est pas à 0.
 - Le niveau de déblocage d'une compétence ne peut excéder le niveau maximal pour un personnage.
 - Certaines compétences sont spécifiques à une ou plusieurs classes, et logiquement uniquement débloquables par celles-ci.
 
-# Inventaire des personnages
+## Inventaire
 - La quantité d’objets contenu dans l'inventaire du personnage ne peut dépasser la limite définie par son niveau et les éventuels artéfacts augmentant cette capacité.
+
+## Autres considérations
+- Le personnage possède des lignes de dialogue non seulement en relation avec des PNJ, mais également seul (par exemple, lorsqu'il n'a pas bougé depuis quelques temps, il dit quelque chose même s'il est complètement seul).
 
 # Objets
 - !!! : A supprimé pour moi : Le prix d'un objet ne peut pas excéder la quantité maximale d'argent stockable par un Utilisateur en théorie, c'est-à-dire la quantité maximale d'argent stockable au niveau maximal et avec tous les artéfacts pouvant possiblement augmenter cette capacité.
